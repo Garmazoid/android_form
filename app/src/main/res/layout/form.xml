@@ -1,0 +1,334 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="585dp">
+
+        <EditText
+            android:id="@+id/FIO"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="27dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="35dp"
+            android:text="ФИО: "
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="20dp"
+            android:textSize="26dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="84dp"
+            android:inputType="number"
+            android:text="Возраст:"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="134dp"
+            android:text="Уровень ЗП:"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/salarySeek"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginRight="10dp"
+            android:max="15"
+            android:progress="4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Salary"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Salary"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="154dp"
+            android:text="800$"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        // ------------------------------------------------------------------
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="20dp"
+            android:background="#14ffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        // ------------------------------------------------------------------
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="210dp"
+            android:gravity="center"
+            android:text="Сколько типов данных в Java?"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="240dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="240dp">
+
+            <RadioButton
+                android:id="@+id/radioButton1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="0dp"
+                android:text="6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="-48dp"
+                android:text="7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-48dp"
+                android:text="8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-48dp"
+                android:text="9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+
+        </RadioGroup>
+
+
+        // ------------------------------------------------------------------
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="20dp"
+            android:background="#14ffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        // ------------------------------------------------------------------
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:text="Why are you gay?"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="350dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="240dp">
+
+            <RadioButton
+                android:id="@+id/radioButton2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="0dp"
+                android:text="yes"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+
+            <RadioButton
+                android:id="@+id/radioButton2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="-48dp"
+                android:text="of course"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+
+        </RadioGroup>
+
+
+        // ------------------------------------------------------------------
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginRight="20dp"
+            android:background="#14ffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        // ------------------------------------------------------------------
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="430dp"
+            android:gravity="center"
+            android:text="cadiaN или cadiaN?"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="460dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="240dp">
+
+            <RadioButton
+                android:id="@+id/radioButton3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="0dp"
+                android:text="cadiaN"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+
+            <RadioButton
+                android:id="@+id/radioButton3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="-48dp"
+                android:text="cadiaN"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="269dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/butConfirm"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlue"
+            android:text="Отправить"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="522dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="530dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Profile"
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+</LinearLayout>

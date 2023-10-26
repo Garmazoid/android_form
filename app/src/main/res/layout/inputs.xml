@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="222dp"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="222dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/calculatePlus"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="+"
+        android:textSize="32sp"/>
+    <Button
+        android:id="@+id/calculateMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="-"
+        android:textSize="32sp" />
+    <Button
+        android:id="@+id/calculateMultipl"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="*"
+        android:textSize="32sp" />
+    <Button
+        android:id="@+id/calculateDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="/"
+        android:textSize="32sp" />
+
+    />
+
+</LinearLayout>
+    
